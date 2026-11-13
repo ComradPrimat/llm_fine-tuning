@@ -1,0 +1,146 @@
+[
+    {
+        "lang": "en",
+        "category": "math",
+        "question": "A train travels at 90 km/h. How many meters does it cover in 1 second?",
+        "reference_steps": [
+            "90 km/h = 90000 m / 3600 s",
+            "90000 / 3600 = 25",
+            "So the train covers 25 m per second"
+        ],
+        "reference_answer": "25",
+        "before": "To determine how many meters the train covers in 1 second when traveling at 90 km/h, we need to convert the speed from kilometers per hour (km/h) to meters per second (m/s).\n\nFirst, let's recall the conversion factors:\n- 1 kilometer (km) = 1000 meters (m)\n- 1 hour (h) = 3600 seconds (s)\n\nGiven that the train's speed is 90 km/h, we can convert this speed to meters per second as follows:\n\n\\[ 90 \\text{ km/h} = 90 \\times \\frac{1000 \\text{ m}}{1 \\text{ km}} \\times \\frac{1 \\text{ h}}{3600 \\text{ s}} \\]\n\nNow, perform the multiplication and division:\n\n\\[ 90 \\times \\frac{1000}{3600} = 90 \\times \\frac{10}{36} = 90 \\times \\frac{5}{18} = 5 \\times 5 = 25 \\text{ m/s} \\]\n\nSo, the train covers 25 meters in 1 second.",
+        "after": "To determine how many meters the train covers in 1 second when traveling at 90 km/h, we need to convert the speed from kilometers per hour (km/h) to meters per second (m/s).\n\nFirst, recall the conversion factors:\n- 1 kilometer (km) = 1000 meters (m)\n- 1 hour (h) = 3600 seconds (s)\n\nGiven the speed of the train is 90 km/h, we can convert this speed to meters per second as follows:\n\n\\[\n90 \\text{ km/h} = 90 \\times \\frac{1000 \\text{ m}}{1 \\text{ km}} \\times \\frac{1 \\text{ h}}{3600 \\text{ s}}\n\\]\n\nSimplify the expression step-by-step:\n\n\\[\n90 \\times \\frac{1000}{3600} = 90 \\times \\frac{10}{36} = 90 \\times \\frac{5}{18} = 5 \\times 5 = 25 \\text{ m/s}\n\\]\n\nThus, the train covers 25 meters in 1 second.\n\nTherefore, the final answer is:\n\n\\[\n\\boxed{25}\n\\]"
+    },
+    {
+        "lang": "en",
+        "category": "math",
+        "question": "A store offers a 20% discount on all items, and then an extra coupon takes another 10% off the final price. Is the total discount bigger or smaller than 30%?",
+        "reference_steps": [
+            "First discount: price becomes 0.8 of the original",
+            "Second discount applies to the new price: 0.8 * 0.9 = 0.72",
+            "Total discount is 1 - 0.72 = 0.28, i.e. 28%",
+            "28% < 30%, so the total discount is smaller"
+        ],
+        "reference_answer": "28% (smaller than 30%)",
+        "before": "To determine whether the total discount is bigger or smaller than 30%, let's consider a hypothetical item with an original price of $P$.\n\n### Step-by-Step Calculation:\n\n1. **First Discount (20%):**\n   - The first discount reduces the price by 20%. \n   - So, the price after the first discount is \\( P \\times (1 - 0.20) = P \\times 0.80 \\).\n\n2. **Second Discount (10%):**\n   - The second discount is applied to the already discounted price.\n   - So, the price after the second discount is \\( (P \\times 0.80) \\times (1 - 0.10) = (P \\times 0.80) \\times 0.90 \\).\n\n3. **Final Price Calculation:**\n   - Combining these steps, the final price is:\n     \\[\n     P \\times 0.80 \\times 0.90 = P \\times 0.72\n     \\]\n\n4. **Total Discount Calculation:**\n   - The final price is 72% of the original price, meaning the customer pays only 72% of the original price.\n   - Therefore, the total discount is \\( 100\\% - 72\\% = 28\\% \\).\n\n### Conclusion:\nThe total discount is 28%, which is smaller than 30%.\n\nSo, the total discount is **smaller** than 30%.",
+        "after": "To determine whether the total discount is bigger or smaller than 30%, we need to calculate the effective discount step by step.\n\nLet's assume the original price of an item is \\( P \\).\n\n1. **First Discount (20%)**:\n   The first discount reduces the price by 20%. So, the price after the first discount is:\n   \\[\n   P - 0.2P = 0.8P\n   \\]\n\n2. **Second Discount (10%)**:\n   The second discount is applied to the already discounted price, which is \\( 0.8P \\). This discount reduces the price by 10%. So, the price after the second discount is:\n   \\[\n   0.8P - 0.1 \\times 0.8P = 0.8P \\times (1 - 0.1) = 0.8P \\times 0.9 = 0.72P\n   \\]\n\nThe final price after both discounts is \\( 0.72P \\). This means that the total discount from the original price \\( P \\) is:\n\\[\nP - 0.72P = 0.28P\n\\]\nSo, the total discount is 28%.\n\nComparing this with 30%, we see that 28% is smaller than 30%.\n\nTherefore, the total discount is \\(\\boxed{\\text{smaller}}\\) than 30%."
+    },
+    {
+        "lang": "en",
+        "category": "logic",
+        "question": "Statement: 'Everyone who did not submit the report received a warning.' Is it true that everyone who received a warning did not submit the report?",
+        "reference_steps": [
+            "The statement says: no report -> warning",
+            "The question asks about the converse: warning -> no report",
+            "The converse does not follow from the original statement",
+            "Counterexample: Alice submitted the report late but got a warning for another reason (e.g. formatting)"
+        ],
+        "reference_answer": "No, it does not follow. Counterexample: someone who submitted the report can still get a warning for another reason.",
+        "before": "To determine if the statement \"Everyone who received a warning did not submit the report\" is true based on the given statement \"Everyone who did not submit the report received a warning,\" we need to analyze the logical relationship between these two statements.\n\nLet's define:\n- \\( P \\): Someone submitted the report.\n- \\( W \\): Someone received a warning.\n\nThe given statement can be rephrased in terms of logical implication:\n\\[ \\neg P \\implies W \\]\nThis means that if someone did not submit the report (\\(\\neg P\\)), then they received a warning (\\(W\\)).\n\nNow, let's consider the statement we want to verify:\n\\[ W \\implies \\neg P \\]\nThis would mean that if someone received a warning (\\(W\\)), then they did not submit the report (\\(\\neg P\\)).\n\nHowever, from the original statement, we only know that if someone did not submit the report, they received a warning. This does not provide any information about whether someone who received a warning must have not submitted the report. It could be possible that some people who received warnings submitted the report, or there might be other reasons for receiving a warning (e.g., late submission, minor issues).\n\nTherefore, based solely on the given statement, we cannot conclude that \"Everyone who received a warning did not submit the report.\" The original statement does not provide enough information to make this specific claim.\n\nSo, the answer is: No, it is not necessarily true that everyone who received a warning did not submit the report.",
+        "after": "To determine whether the statement \"Everyone who did not submit the report received a warning\" implies that \"Everyone who received a warning did not submit the report,\" let's analyze the logical structure of the given statement and the conclusion.\n\nThe original statement can be broken down as follows:\n1. Everyone who did not submit the report received a warning.\nThis can be written in logical terms as:\n\\[ \\text{If } x \\text{ did not submit the report, then } x \\text{ received a warning.} \\]\nIn symbols, this is:\n\\[ \\forall x (\\neg \\text{Submit}(x) \\rightarrow \\text{ReceiveWarning}(x)) \\]\n\nNow, we need to determine if the following statement is true based on the original statement:\n2. Everyone who received a warning did not submit the report.\nThis can be written in logical terms as:\n\\[ \\text{If } x \\text{ received a warning, then } x \\text{ did not submit the report.} \\]\nIn symbols, this is:\n\\[ \\forall x (\\text{ReceiveWarning}(x) \\rightarrow \\neg \\text{Submit}(x)) \\]\n\nLet's see if these two statements are logically equivalent or if one implies the other.\n\nFrom the original statement, we know:\n\\[ \\forall x (\\neg \\text{Submit}(x) \\rightarrow \\text{ReceiveWarning}(x)) \\]\n\nWe want to check if this implies:\n\\[ \\forall x (\\text{ReceiveWarning}(x) \\rightarrow \\neg \\text{Submit}(x)) \\]\n\nHowever, the implication does not necessarily hold. Consider the following counterexample:\n\n- Let \\( A \\) be the set of people who submitted the report.\n- Let \\( B \\) be the set of people who did not submit the report.\n- Let \\( W \\) be the set of people who received a warning.\n\nThe original statement says:\n\\[ \\forall x (x \\in B \\rightarrow x \\in W) \\]\nwhich means every person who did not submit the report received a warning.\n\nBut the statement we are checking says:\n\\[ \\forall x (x \\in W \\rightarrow x \\notin B) \\]\nwhich means every person who received a warning did not submit the report.\n\nThese two statements are not logically equivalent. The first statement only tells us that those who did not submit the report received a warning, but it does not tell us anything about those who submitted the report. Therefore, the second statement cannot be inferred from the first.\n\nThus, the answer is:\n\\[\n\\boxed{\\text{No}}\n\\]"
+    },
+    {
+        "lang": "en",
+        "category": "math",
+        "question": "A warehouse has 120 boxes. On day 1, one third of all boxes are shipped. On day 2, 25% of the remaining boxes are shipped. On day 3, 10 more boxes are shipped. How many boxes remain?",
+        "reference_steps": [
+            "Day 1: 120 / 3 = 40 shipped, 120 - 40 = 80 remain",
+            "Day 2: 25% of 80 = 20 shipped, 80 - 20 = 60 remain",
+            "Day 3: 10 shipped, 60 - 10 = 50 remain"
+        ],
+        "reference_answer": "50",
+        "before": "Let's break down the problem step by step.\n\nInitially, there are 120 boxes in the warehouse.\n\n**Day 1:**\n- One third of the boxes are shipped.\n- Number of boxes shipped on Day 1 = \\( \\frac{1}{3} \\times 120 = 40 \\)\n- Remaining boxes after Day 1 = \\( 120 - 40 = 80 \\)\n\n**Day 2:**\n- 25% of the remaining boxes are shipped.\n- Number of boxes shipped on Day 2 = \\( 0.25 \\times 80 = 20 \\)\n- Remaining boxes after Day 2 = \\( 80 - 20 = 60 \\)\n\n**Day 3:**\n- 10 more boxes are shipped.\n- Number of boxes shipped on Day 3 = 10\n- Remaining boxes after Day 3 = \\( 60 - 10 = 50 \\)\n\nTherefore, the number of boxes that remain in the warehouse is **50**.",
+        "after": "To determine how many boxes remain in the warehouse after the specified days, we will follow these steps:\n\n1. Calculate the number of boxes shipped on day 1.\n2. Determine the number of boxes remaining after day 1.\n3. Calculate the number of boxes shipped on day 2.\n4. Determine the number of boxes remaining after day 2.\n5. Subtract the number of boxes shipped on day 3 from the remaining boxes after day 2.\n\nLet's start with the initial number of boxes, which is 120.\n\n**Day 1:**\nOne third of the boxes are shipped.\n\\[\n\\text{Boxes shipped on day 1} = \\frac{1}{3} \\times 120 = 40\n\\]\n\\[\n\\text{Boxes remaining after day 1} = 120 - 40 = 80\n\\]\n\n**Day 2:**\n25% of the remaining boxes are shipped.\n\\[\n\\text{Boxes shipped on day 2} = 0.25 \\times 80 = 20\n\\]\n\\[\n\\text{Boxes remaining after day 2} = 80 - 20 = 60\n\\]\n\n**Day 3:**\n10 more boxes are shipped.\n\\[\n\\text{Boxes remaining after day 3} = 60 - 10 = 50\n\\]\n\nThus, the number of boxes that remain in the warehouse is \\(\\boxed{50}\\)."
+    },
+    {
+        "lang": "en",
+        "category": "algorithms",
+        "question": "Given an array of integers, find the maximum sum of a contiguous subarray. Describe the algorithm step by step (no code needed), then apply it to [-2, 1, -3, 4, -1, 2, 1, -5, 4].",
+        "reference_steps": [
+            "Use Kadane's algorithm: maintain a current sum of the subarray, resetting it to the current element if the previous sum was negative.",
+            "Tracing [-2, 1, -3, 4, -1, 2, 1, -5, 4]:",
+            "- Element -2: current=-2, best=-2",
+            "- Element 1: current=1 (since -2+1 < 1), best=1",
+            "- Element -3: current=-2, best=1",
+            "- Element 4: current=4 (since -2+4 < 4), best=4",
+            "- Element -1: current=3, best=4",
+            "- Element 2: current=5, best=5",
+            "- Element 1: current=6, best=6",
+            "- Element -5: current=1, best=6",
+            "- Element 4: current=5, best=6",
+            "The maximum sum is 6, achieved by the subarray [4, -1, 2, 1]."
+        ],
+        "reference_answer": "6 (subarray [4, -1, 2, 1])",
+        "before": "To find the maximum sum of a contiguous subarray in an array of integers, you can use Kadane's Algorithm. Here is a step-by-step explanation of the algorithm:\n\n### Step-by-Step Explanation of Kadane's Algorithm\n\n1. **Initialization**: Start with two variables: `maxSoFar` and `maxEndingHere`. Set both to the first element of the array. These variables will keep track of the maximum sum found so far and the maximum sum ending at the current position, respectively.\n\n2. **Iterate Through the Array**: Loop through each element in the array starting from the second element.\n\n3. **Update `maxEndingHere`**: For each element, update `maxEndingHere` to be the maximum of the current element or the sum of `maxEndingHere` and the current element. This step ensures that `maxEndingHere` always holds the maximum sum of a subarray ending at the current index.\n\n4. **Update `maxSoFar`**: Update `maxSoFar` to be the maximum of `maxSoFar` and `maxEndingHere`. This step ensures that `maxSoFar` always holds the maximum sum of any subarray seen so far.\n\n5. **Return `maxSoFar`**: After iterating through the entire array, `maxSoFar` will hold the maximum sum of a contiguous subarray.\n\n### Applying the Algorithm to the Given Array\n\nLet's apply this algorithm to the given array: \\([-2, 1, -3, 4, -1, 2, 1, -5, 4]\\).\n\n1. **Initialization**:\n   - `maxSoFar = -2`\n   - `maxEndingHere = -2`\n\n2. **Iterate Through the Array**:\n   - For the second element (`1`):\n     - `maxEndingHere = max(-2 + 1, 1) = max(1, 1) = 1`\n     - `maxSoFar = max(-2, 1) = 1`\n   - For the third element (`-3`):\n     - `maxEndingHere = max(-3, -3 + 1) = max(-3, -2) = -2`\n     - `maxSoFar = max(1, -2) = 1`\n   - For the fourth element (`4`):\n     - `maxEndingHere = max(4, -2 + 4) = max(4, 2) = 4`\n     - `maxSoFar = max(1, 4) = 4`\n   - For the fifth element (`-1`):\n     - `maxEndingHere = max(-1, 4 + -1) = max(-1, 3) = 3`\n     - `maxSoFar = max(4, 3) = 4`\n   - For the sixth element (`2`):\n     - `maxEndingHere = max(2, 3 + 2) = max(2, 5) = 5`\n     - `maxSoFar = max(4, 5) = 5`\n   - For the seventh element (`1`):\n     - `maxEndingHere = max(1, 5 + 1) = max(1, 6) = 6`\n     - `maxSoFar = max(5, 6) = 6`\n   - For the eighth element (`-5`):\n     - `maxEndingHere = max(-5, 6 + -5) = max(-5, 1) = 1`\n     - `maxSoFar = max(6, 1) = 6`\n   - For the ninth element (`4`):\n     - `maxEndingHere = max(4, 1 + 4) = max(4, 5) = 5`\n     - `maxSoFar = max(6, 5) = 6`\n\n3. **Final Result**:\n   - The maximum sum of a contiguous subarray is `6`.\n\nThus, the maximum sum of a contiguous subarray for the given array \\([-2, 1, -3, 4, -1, 2, 1, -5, 4]\\) is \\(6\\).",
+        "after": "To solve this problem, we can use Kadane's Algorithm, which is an efficient way to find the maximum sum of a contiguous subarray within a one-dimensional array of numbers.\n\n### Step-by-Step Explanation:\n\n1. **Initialization**: Start with two variables: `maxSoFar` and `currentMax`. Set both to the first element of the array. This ensures that even if all elements in the array are negative, the algorithm will still work correctly.\n\n2. **Iterate Through the Array**: For each element in the array, update `currentMax` as follows:\n   - If `currentMax` becomes negative after adding the current element, reset `currentMax` to the current element. This means that starting a new subarray from the current element might give us a better result.\n   - Otherwise, add the current element to `currentMax`.\n\n3. **Update Maximum Sum**: After updating `currentMax`, check if it is greater than `maxSoFar`. If it is, update `maxSoFar` to `currentMax`.\n\n4. **Return the Result**: After iterating through the entire array, `maxSoFar` will contain the maximum sum of any contiguous subarray.\n\n### Applying the Algorithm to the Given Array\n\nLet's apply the above steps to the given array: [-2, 1, -3, 4, -1, 2, 1, -5, 4].\n\n1. Initialize `maxSoFar` and `currentMax` to the first element `-2`.\n2. Iterate through the array:\n   - At index 0: `currentMax = -2` (since `-2 < -2 + (-2)`)\n   - At index 1: `currentMax = 1` (since `1 > -2 + 1`)\n   - At index 2: `currentMax = 1` (since `1 < 1 + (-3)`; reset `currentMax` to `-3`)\n   - At index 3: `currentMax = 4` (since `4 > -3 + 4`)\n   - At index 4: `currentMax = 3` (since `3 < 4 + (-1)`)\n   - At index 5: `currentMax = 5` (since `5 > 3 + 2`)\n   - At index 6: `currentMax = 6` (since `6 > 5 + 1`)\n   - At index 7: `currentMax = 1` (since `1 < 6 + (-5)`)\n   - At index 8: `currentMax = 5` (since `5 > 1 + 4`)\n\n3. After iterating through the array, `maxSoFar` is `6`.\n\nTherefore, the maximum sum of a contiguous subarray in the given array is **6**."
+    },
+    {
+        "lang": "ru",
+        "category": "math",
+        "question": "У Пети 18 конфет, у Васи — в 3 раза меньше, чем у Пети, а у Маши — на 7 больше, чем у Васи. Сколько всего конфет у троих?",
+        "reference_steps": [
+            "У Васи: 18 / 3 = 6",
+            "У Маши: 6 + 7 = 13",
+            "Всего: 18 + 6 + 13 = 37"
+        ],
+        "reference_answer": "37",
+        "before": "Давайте решим эту задачу шаг за шагом:\n\n1) У Пети 18 конфет.\n\n2) У Васи в 3 раза меньше, чем у Пети:\n   18 ÷ 3 = 6 конфет у Васи.\n\n3) У Маши на 7 больше, чем у Васи:\n   6 + 7 = 13 конфет у Маши.\n\n4) Теперь скажем, сколько всего конфет у троих детей:\n   18 (у Пети) + 6 (у Васи) + 13 (у Маши) = 37 конфет.\n\nОтвет: У троих детей всего 37 конфет.",
+        "after": "Давайте решим эту задачу шаг за шагом.\n\n1) Сначала определим количество конфет у каждого ребенка:\n   - У Пети: 18 конфет\n   - У Васи: 18 / 3 = 6 конфет (в 3 раза меньше, чем у Пети)\n   - У Маши: 6 + 7 = 13 конфет (на 7 больше, чем у Васи)\n\n2) Теперь скажем, сколько всего конфет у троих детей:\n   18 (у Пети) + 6 (у Васи) + 13 (у Маши) = 37 конфет\n\nОтвет: У троих детей всего 37 конфет."
+    },
+    {
+        "lang": "ru",
+        "category": "logic",
+        "question": "В классе 25 учеников. 15 занимаются математикой, 12 — физикой, а 8 — и тем, и другим. Сколько учеников не занимаются ни математикой, ни физикой?",
+        "reference_steps": [
+            "Только математика: 15 - 8 = 7",
+            "Только физика: 12 - 8 = 4",
+            "Хотя бы один предмет: 7 + 4 + 8 = 19",
+            "Ни один предмет: 25 - 19 = 6"
+        ],
+        "reference_answer": "6",
+        "before": "Давайте решим эту задачу пошагово.\n\n1) Сначала определим общее количество учеников, которые занимаются как математикой, так и физикой. По условию задачи это 8 учеников.\n\n2) Теперь рассчитаем общее количество учеников, которые занимаются хотя бы одним из этих предметов. Для этого используем формулу для нахождения объединения двух множеств:\n\n   \\( |A \\cup B| = |A| + |B| - |A \\cap B| \\)\n\n   где:\n   - \\( |A| \\) — количество учеников, занимающихся математикой (15 учеников),\n   - \\( |B| \\) — количество учеников, занимающихся физикой (12 учеников),\n   - \\( |A \\cap B| \\) — количество учеников, занимающихся и математикой, и физикой (8 учеников).\n\n3) Подставляем значения в формулу:\n\n   \\( |A \\cup B| = 15 + 12 - 8 = 19 \\)\n\n   Это означает, что 19 учеников занимаются либо математикой, либо физикой или оба предмета.\n\n4) Теперь вычислим количество учеников, которые не занимаются ни математикой, ни физикой. Для этого вычтем из общего числа учеников (25) количество учеников, занимающихся как математикой, так и физикой:\n\n   \\( 25 - 19 = 6 \\)\n\nТаким образом, 6 учеников не занимаются ни математикой, ни физикой.",
+        "after": "Давайте решим эту задачу пошагово.\n\n1) Сначала определим общее количество учеников, которые занимаются как математикой, так и физикой. Это 8 человек.\n\n2) Теперь рассчитаем общее количество учеников, которые занимаются хотя бы одним из этих предметов. Для этого используем формулу для нахождения объединения двух множеств:\n\n   |A ∪ B| = |A| + |B| - |A ∩ B|\n\n   где:\n   |A| - количество учеников, занимающихся математикой (15)\n   |B| - количество учеников, занимающихся физикой (12)\n   |A ∩ B| - количество учеников, занимающихся и математикой, и физикой (8)\n\n3) Подставляем значения в формулу:\n\n   |A ∪ B| = 15 + 12 - 8 = 29\n\n4) Однако мы знаем, что всего в классе 25 учеников. Значит, 4 ученика не занимаются ни математикой, ни физикой.\n\nОтвет: 4 ученика не занимаются ни математикой, ни физикой."
+    },
+    {
+        "lang": "ru",
+        "category": "logic",
+        "question": "Алиса старше Боба. Карл старше Алисы. Кто самый старший и кто самый младший?",
+        "reference_steps": [
+            "Алиса старше Боба: A > B",
+            "Карл старше Алисы: K > A",
+            "Значит K > A > B",
+            "Самый старший — Карл, самый младший — Боб"
+        ],
+        "reference_answer": "Карл — самый старший, Боб — самый младший",
+        "before": "Из предоставленной информации мы можем сделать следующее:\n\n1. Карл старше Алисы (по крайней мере на один год).\n2. Алиса старше Боба.\n\nТаким образом, у нас есть три человека: Карл, Алиса и Боб. Чтобы определить, кто самый старший и кто самый младший, нам нужно сравнить их возраст:\n\n- Карл старше Алисы, значит Карл не может быть младшим.\n- Алиса старше Боба, значит Боб не может быть старше Алисы.\n- Но мы не знаем точного возраста каждого из них, поэтому сложно сказать, кто самый старший и кто самый младший.\n\nОднако, если предположить, что возраст каждого человека разный, то можно сделать следующие выводы:\n\n- Карл - самый старший, так как он старше Алисы.\n- Боб - самый младший, так как у него нет информации о его возрасте по сравнению с другими людьми, но он старше Алисы.\n\nТаким образом, если исходить из имеющихся данных, Карл самый старший, а Боб самый младший. Алиса находится между ними.",
+        "after": "Извините, но в вашем вопросе нет конкретных возрастов для каждого из персонажей. Вы сказали только, что Алиса старше Боба, а Карл старше Алисы. Это означает, что Карл старше всех троих, но возраст Боба меньше, чем у Алисы, а у Алисы меньше, чем у Карла. \n\nТаким образом, самый старший - это Карл, а самый младший - это Боб. Но без точных данных о возрастах, это всего лишь предположение. Если у вас есть конкретные данные о возрасте каждого из них, я с удовольствием помогу определить их порядок по возрасту."
+    },
+    {
+        "lang": "ru",
+        "category": "math",
+        "question": "Билет стоит 500 рублей. При покупке от 3 билетов — скидка 10%, при покупке от 10 — скидка 20%. Группе из 12 человек нужны билеты. Сколько они заплатят, если купят всё разом? А если разобьются на две группы по 6?",
+        "reference_steps": [
+            "12 билетов одним заказом: скидка 20%, цена 500 * 0.8 = 400, итого 12 * 400 = 4800",
+            "Две группы по 6: скидка 10%, цена 500 * 0.9 = 450, итого 12 * 450 = 5400",
+            "Разница: 5400 - 4800 = 600, покупка разом выгоднее"
+        ],
+        "reference_answer": "4800 одним заказом против 5400 по частям; разница 600 рублей",
+        "before": "Давайте решим эту задачу шаг за шагом.\n\n### Если купят все билеты сразу:\n\n1. **Цена одного билета**: 500 рублей.\n2. **Количество билетов**: 12.\n3. **Скидка**: 20% (так как количество билетов больше 10).\n\n**Шаг 1: Вычислим общую стоимость без скидки**\n\\[ \\text{Общая стоимость} = 12 \\times 500 = 6000 \\text{ рублей} \\]\n\n**Шаг 2: Вычислим скидку**\n\\[ \\text{Скидка} = 20\\% \\text{ от } 6000 = 0.20 \\times 6000 = 1200 \\text{ рублей} \\]\n\n**Шаг 3: Вычислим стоимость с учетом скидки**\n\\[ \\text{Стоимость с учетом скидки} = 6000 - 1200 = 4800 \\text{ рублей} \\]\n\nТаким образом, если купят все билеты сразу, группа заплатит **4800 рублей**.\n\n### Если разобьются на две группы по 6 человек:\n\n1. **Цена одного билета**: 500 рублей.\n2. **Количество билетов в каждой группе**: 6.\n3. **Скидка**: 10% (так как количество билетов в каждой группе больше 3).\n\n**Шаг 1: Вычислим общую стоимость одной группы без скидки**\n\\[ \\text{Общая стоимость одной группы} = 6 \\times 500 = 3000 \\text{ рублей} \\]\n\n**Шаг 2: Вычислим скидку для одной группы**\n\\[ \\text{Скидка} = 10\\% \\text{ от } 3000 = 0.10 \\times 3000 = 300 \\text{ рублей} \\]\n\n**Шаг 3: Вычислим стоимость одной группы с учетом скидки**\n\\[ \\text{Стоимость одной группы с учетом скидки} = 3000 - 300 = 2700 \\text{ рублей} \\]\n\n**Шаг 4: Вычислим общую стоимость двух групп**\n\\[ \\text{Общая стоимость двух групп} = 2 \\times 2700 = 5400 \\text{ рублей} \\]\n\nТаким образом, если разобьются на две группы по 6 человек, каждая группа заплатит **2700 рублей**, и в сумме обе группы заплатят **5400 рублей**.",
+        "after": "Давайте решим эту задачу шаг за шагом.\n\n### Если купят все билеты сразу\n\n1. **Цена одного билета**: 500 рублей.\n2. **Количество билетов**: 12.\n3. **Скидка**: 20% (так как количество билетов больше 10).\n\n**Шаг 1: Вычислим общую стоимость без скидки**\n\\[ \\text{Общая стоимость} = 12 \\times 500 = 6000 \\text{ рублей} \\]\n\n**Шаг 2: Вычислим скидку**\n\\[ \\text{Скидка} = 20\\% \\text{ от } 6000 = 0.20 \\times 6000 = 1200 \\text{ рублей} \\]\n\n**Шаг 3: Вычислим стоимость с учетом скидки**\n\\[ \\text{Стоимость с учетом скидки} = 6000 - 1200 = 4800 \\text{ рублей} \\]\n\nТаким образом, если купят все билеты сразу, они заплатят **4800 рублей**.\n\n### Если разобьются на две группы по 6\n\n1. **Цена одного билета**: 500 рублей.\n2. **Количество билетов в каждой группе**: 6.\n3. **Скидка**: 10% (так как количество билетов в каждой группе больше 3).\n\n**Шаг 1: Вычислим общую стоимость одной группы без скидки**\n\\[ \\text{Общая стоимость одной группы} = 6 \\times 500 = 3000 \\text{ рублей} \\]\n\n**Шаг 2: Вычислим скидку для одной группы**\n\\[ \\text{Скидка} = 10\\% \\text{ от } 3000 = 0.10 \\times 3000 = 300 \\text{ рублей} \\]\n\n**Шаг 3: Вычислим стоимость одной группы с учетом скидки**\n\\[ \\text{Стоимость одной группы с учетом скидки} = 3000 - 300 = 2700 \\text{ рублей} \\]\n\n**Шаг 4: Вычислим общую стоимость двух групп**\n\\[ \\text{Общая стоимость двух групп} = 2 \\times 2700 = 5400 \\text{ рублей} \\]\n\nТаким образом, если разобьются на две группы по 6, они заплатят **5400 рублей**.\n\n### Вывод:\n- Если купят все билеты сразу, они заплатят **4800 рублей**.\n- Если разобьются на две группы по 6, они заплатят **5400 рублей**."
+    },
+    {
+        "lang": "ru",
+        "category": "math",
+        "question": "Если A > B и B ≥ C, что можно точно сказать про A и C? Перечисли все верные утверждения из списка: A > C, A ≥ C, A = C.",
+        "reference_steps": [
+            "Из B ≥ C следует B > C или B = C",
+            "В обоих случаях A > B и B ≥ C дают A > C",
+            "Проверка: если B = C, то A > C; если B > C, то A > C тем более",
+            "A = C невозможно, так как A > B ≥ C"
+        ],
+        "reference_answer": "Верно только A > C (и, следовательно, A ≥ C как его следствие)",
+        "before": "Исходя из условий A > B и B ≥ C, мы можем сделать следующие выводы:\n\n1. Следует заключить, что A > B и B ≥ C. Это означает, что A больше или равно C.\n\n2. Однако, мы не можем точно сказать, что A > C. Возможно, A = C, если B = C.\n\n3. Мы также не можем точно сказать, что A = C. Возможно, A > C, если B > C.\n\nТаким образом, из предоставленного списка верными утверждениями являются:\n- A ≥ C\n- A ≠ C (это ложное утверждение, так как A может быть равен C)\n- A > C (это тоже ложное утверждение, так как A может быть равен C)\n\nВерным остается только утверждение A ≥ C.",
+        "after": "Давайте разберем это пошагово:\n\n1) Мы знаем, что A > B\n2) Также известно, что B ≥ C\n\nТеперь давайте объединим эти факты:\n\n- Сначала отметим, что B ≥ C означает, что C ≤ B (так как если B больше или равно C, то C меньше или равно B).\n- Теперь, зная, что A > B, а B ≥ C, мы можем сделать вывод, что A > C.\n\nТаким образом, мы точно знаем, что A > C.\n\nОднако, мы не можем точно сказать, что A ≥ C, так как A может быть строго больше B, но не обязательно строго больше C. Например, если B = 3, C = 2, то A может быть 4, 5, 6 и т.д., но не 2.\n\nИз этого следует, что верным утверждением будет только A > C.\n\nОтвет: A > C"
+    }
+]
