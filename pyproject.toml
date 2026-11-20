@@ -3,9 +3,20 @@ name = "llm-fine-tuning"
 version = "0.1.0"
 requires-python = ">=3.11,<3.12"
 dependencies = [
-    "iprogress>=0.4",
-    "jupyterlab>=4.6.6",
-    "matplotlib>=3.11.2",
-    "seaborn>=0.13.2",
-    "tqdm>=4.70.1",
+    "accelerate==1.13.0",
+    "datasets==4.8.3",
+    "huggingface-hub==0.36.2",
+    "peft==0.17.1",
+    "safetensors==0.7.0",
+    "torch==2.5.1",
+    "transformers==4.57.1",
+    "trl==0.22.2",
 ]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu121" }
+
+[[tool.uv.index]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
